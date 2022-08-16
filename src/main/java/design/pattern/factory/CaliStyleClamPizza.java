@@ -1,6 +1,6 @@
 package design.pattern.factory;
 
-public class CaliStyleClamPizza implements Pizza {
+public class CaliStyleClamPizza extends Pizza {
     @Override
     public void box() {
 

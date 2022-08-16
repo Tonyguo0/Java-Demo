@@ -1,23 +1,16 @@
 package design.pattern.factory;
 
-public class ChicagoStyleCheesePizza implements Pizza {
-    @Override
-    public void box() {
+public class ChicagoStyleCheesePizza extends Pizza {
 
+    public ChicagoStyleCheesePizza() {
+        name = "Chicago Style Deep Dish Cheese Pizza";
+        dough = "Extra Thick Crust Dough";
+        sauce = "Plum Tomato Sauce";
+
+        toppings.add("Shredded Mozzarella Cheese");
     }
 
-    @Override
-    public void cut() {
-
-    }
-
-    @Override
-    public void bake() {
-
-    }
-
-    @Override
-    public void prepare() {
-
+    void cut() {
+        System.out.println("Cutting the pizza into square slices");
     }
 }
